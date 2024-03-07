@@ -1,0 +1,14 @@
+{
+  "name": "@arjansunar/useUrl",
+  "version": "1.0.0",
+  "description": "A type safe Url state hook via zod",
+  "type": "module",
+  "repository": "arjansunar/useUrl",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
