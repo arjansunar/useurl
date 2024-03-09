@@ -3,8 +3,8 @@ import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useCallback } from "react";
 import { ZodSchema, z } from "zod";
 
-type SetUrlValue = (key: string, value: string) => void;
-type DeleteUrlValue = (key: string) => void;
+export type SetUrlValue<Key> = (key: Key, value: string) => void;
+export type DeleteUrlValue = (key: string) => void;
 
 /**
  * State management via the URLS
@@ -21,7 +21,7 @@ type DeleteUrlValue = (key: string) => void;
 export function useUrl<
   Schema extends ZodSchema,
   Output extends z.infer<Schema>
->(schema: Schema): [Output, SetUrlValue, DeleteUrlValue] {
+>(schema: Schema): [Output, SetUrlValue<keyof Output>, DeleteUrlValue] {
   const searchParams = useSearchParams();
   const pathname = usePathname();
   const router = useRouter();
