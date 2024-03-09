@@ -9,5 +9,6 @@
     "noUncheckedIndexedAccess": true,
     "skipLibCheck": true
   },
-  "exclude": ["node_modules", "tib", "**"]
+  "include": ["src"],
+  "exclude": ["node_modules"]
 }
