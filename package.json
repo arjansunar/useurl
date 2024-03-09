@@ -32,6 +32,11 @@
     "typescript": "^5.4.2",
     "zod": "^3.22.4"
   },
+  "peerDependencies": {
+    "react": "^18",
+    "zod": "^3.22.4",
+    "next": "^14"
+  },
   "bugs": {
     "url": "https://github.com/arjansunar/useUrl/issues"
   },
