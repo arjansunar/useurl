@@ -1,5 +1,5 @@
 {
-  "name": "@lazydev/use-url",
+  "name": "@arjansunar/use-url",
   "version": "0.0.1",
   "description": "A type safe Url state hook via zod",
   "repository": {
@@ -21,7 +21,7 @@
     "nextjs",
     "zod"
   ],
-  "author": "arjansunarj",
+  "author": "arjansunar",
   "license": "MIT",
   "devDependencies": {
     "@changesets/cli": "^2.27.1",
@@ -31,5 +31,9 @@
     "tsup": "^8.0.2",
     "typescript": "^5.4.2",
     "zod": "^3.22.4"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/arjansunar/useUrl/issues"
+  },
+  "homepage": "https://github.com/arjansunar/useUrl#readme"
 }
