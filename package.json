@@ -2,16 +2,19 @@
   "name": "@arjansunar/useUrl",
   "version": "1.0.0",
   "description": "A type safe Url state hook via zod",
-  "type": "module",
   "repository": "arjansunar/useUrl",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsup index.ts --format cjs,esm --dts",
+    "lint": "tsc"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "tsup": "^8.0.2",
     "typescript": "^5.4.2"
   }
 }
