@@ -1,8 +1,11 @@
 {
-  "name": "@arjansunar/useUrl",
-  "version": "1.0.0",
+  "name": "@lazydev/use-url",
+  "version": "0.0.1",
   "description": "A type safe Url state hook via zod",
-  "repository": "arjansunar/useUrl",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arjansunar/useUrl.git"
+  },
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
